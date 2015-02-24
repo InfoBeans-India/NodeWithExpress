@@ -1,0 +1,18 @@
+{
+    "name": "NodeAppWithExpress",
+    "version": "1.0.0",
+    "description": "NodeAppWithExpress",
+    "main": "app.js",
+    "author": {
+        "name": "manish.shrivastava",
+        "email": ""
+    },
+    "dependencies": {
+        "emailjs": "^0.3.3",
+        "express": "3.4.4",
+        "jade": "*",
+        "stylus": "*",
+        "moment": "^1.7.2",
+        "mongodb": "*"
+    }
+}

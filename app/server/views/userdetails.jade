@@ -1,0 +1,13 @@
+
+// preset form values if we receive a userdata object //
+- user = typeof(udata) != 'undefined' ? udata : { }
+- wallUser = typeof(wallUserData) != 'undefined' ? wallUserData : { }
+// store the userId on the client side in a hidden input field //
+input(type='hidden', value= user._id)#userId
+input(type='hidden', value= wallUser._id)#wallUserId
+input(type='hidden', value= user.name)#LoginUserFullName
+input(type='hidden', value= wallUser.name)#wallUserFullName
+
+// display form errors in a custom modal window //
+
+include modals/form-errors

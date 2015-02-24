@@ -1,0 +1,26 @@
+﻿extends layout
+
+block content
+	#login-container
+		form( method="post")#wallpost-form.well.span4
+			h1 Hello!
+			p.subheading Please Login To Your Account
+			label Username 
+			input(type="text", name="userPost", id='userPost-tf').span4.required			
+			button(type="button")#btn-wallpost.btn.btn-primary
+				i.icon-lock.icon-white
+				| Post
+			
+	
+	include userPost
+	include modals/alert
+	include modals/lost-password
+
+block scripts
+	script(src='/vendor/javascripts/jquery.min.js')
+	script(src='/vendor/javascripts/jquery.form.js')
+	script(src='/vendor/javascripts/bootstrap-modal.js')
+	script(src='/vendor/javascripts/bootstrap-transition.js')
+	script(src='/js/views/index.js')
+	script(src='/js/controllers/indexController.js')
+	//script(src='/js/form-validators/accountValidator.js')

@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/vendor/stylesheets/bootstrap_wall.min.css')
+    link(rel='stylesheet', href='/vendor/stylesheets/styles.css')
+    block styles
+  body
+    block content
+    script(src='/vendor/javascripts/jquery.min.js')
+    script(src='/vendor/javascripts/jquery.form.js')
+    script(src='/vendor/javascripts/bootstrap.min.js')
+    script(src='/vendor/javascripts/bootstrap-modal.js')
+    block scripts
