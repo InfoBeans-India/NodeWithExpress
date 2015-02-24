@@ -146,7 +146,7 @@ http.createServer(app).listen(app.get(<span class="code-string">'</span><span cl
 
 This file acts as a controller and responds to the request from client. It sets up the data for the view (from _services/database_) and sends the response.
 
-tu<pre lang="jscript" id="pre2" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Get Function
+<pre lang="jscript" id="pre2" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Get Function
 </span>   app.get(<span class="code-string">'</span><span class="code-string">/'</span>, <span class="code-keyword">function</span> (req, res) {
         <span class="code-comment">//</span><span class="code-comment"> check if the user's credentials are saved in a cookie //
 </span>        <span class="code-keyword">if</span> (req.cookies.user == undefined || req.cookies.pass == undefined) {
