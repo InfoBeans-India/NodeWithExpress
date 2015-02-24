@@ -1,3 +1,8 @@
+[![Build Status](https://img.shields.io/travis/madhums/node-express-mongoose-demo.svg?style=flat)](https://github.com/InfoBeans-India/NodeWithExpress)
+[![Dependencies](https://img.shields.io/david/madhums/node-express-mongoose-demo.svg?style=flat)](https://github.com/InfoBeans-India/NodeWithExpress)
+[![Code climate](http://img.shields.io/codeclimate/github/madhums/node-express-mongoose-demo.svg?style=flat)](https://github.com/InfoBeans-India/NodeWithExpress)
+
+
 ## Introduction
 
 This article lets you through a sample application developed using _Node.js_, Express Framework and using MongoDB as backend.
@@ -366,19 +371,10 @@ db.open(<span class="code-keyword">function</span> (e, d) {
 <span class="code-comment">//</span><span class="code-comment">Delete
 </span>exports.deleteAccount = <span class="code-keyword">function</span> (id, callback) {
     accounts.remove({ _id: getObjectId(id) }, callback);
-}</pre>
+}
+</pre>
 
-##Points of Interest
 
-The article provided a overview of Facebook style application.
-
-For details, please run the application.
-
-						</div>
-
-						<div class="float-right" style="margin:20px 0 0 10px;border:1px solid #ccc">
-						<div class="msg-300x250" data-format="300x250" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="Web-Development/Node-js/General" data-loadonview="true" data-tags="C, Javascript, .NET, Visual-Studio, HTML, Dev, Intermediate, Framework, mongodb, VS2012, Node.js, VS2013, Jade,rating4"><iframe id="dmad3" allowtransparency="false" style="z-index:10" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe></div>
-						</div>
 
 
 ###License
