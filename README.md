@@ -296,16 +296,16 @@ include modals/form-errors</pre>
     title= title
     link(rel=<span class="code-string">'</span><span class="code-string">stylesheet'</span>, href=<span class="code-string">'</span><span class="code-string">http://www.codeproject.com/vendor/stylesheets/bootstrap_wall.min.css'</span>)</pre>
 
-## Database Operations
+##Database Operations
 
-### AccountManager.js
+###AccountManager.js
 
 **This file is responsible for the following operations:**
 
 *   Setting up connection to mongodb database.
 *   Writing functions to fetch data from database.
 
-### Setting up connection to mongodb database
+###Setting up connection to mongodb database
 
 <pre lang="jscript" id="pre10" style="margin-top: 0px;"><span class="code-keyword">var</span> crypto = require(<span class="code-string">'</span><span class="code-string">crypto'</span>);
 <span class="code-keyword">var</span> MongoDB = require(<span class="code-string">'</span><span class="code-string">mongodb'</span>).Db;
@@ -331,7 +331,7 @@ db.open(<span class="code-keyword">function</span> (e, d) {
 <span class="code-keyword">var</span> posts = db.collection(<span class="code-string">'</span><span class="code-string">posts'</span>);
 <span class="code-keyword">var</span> likes = db.collection(<span class="code-string">'</span><span class="code-string">userlikes'</span>);</pre>
 
-### Database queries
+###Database queries
 
 <pre lang="jscript" id="pre11" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Insert
 </span>exports.addNewPost = <span class="code-keyword">function</span> (data, callback) {
@@ -368,7 +368,7 @@ db.open(<span class="code-keyword">function</span> (e, d) {
     accounts.remove({ _id: getObjectId(id) }, callback);
 }</pre>
 
-## Points of Interest
+##Points of Interest
 
 The article provided a overview of Facebook style application.
 
@@ -380,4 +380,8 @@ For details, please run the application.
 						<div class="msg-300x250" data-format="300x250" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="Web-Development/Node-js/General" data-loadonview="true" data-tags="C, Javascript, .NET, Visual-Studio, HTML, Dev, Intermediate, Framework, mongodb, VS2012, Node.js, VS2013, Jade,rating4"><iframe id="dmad3" allowtransparency="false" style="z-index:10" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe></div>
 						</div>
 
+
+###License
+
+MIT
                         
