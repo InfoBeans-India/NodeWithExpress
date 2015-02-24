@@ -82,13 +82,13 @@ We’ll be covering an application walkthrough build with the following technolo
 
 This is the configuration for the application. It specifies the dependencies(modules/libraries) needed for the application and will get installed if it does not exist on running the '`npm install`' command in the Package Manager Console of Visual Studio.
 
-<div class="pre-action-link" id="premain0" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="jscript" id="pre0" style="margin-top: 0px;">{
-    <span class="code-string">"</span><span class="code-string">name"</span>: <span class="code-string">"</span><span class="code-string">ExpressApp2"</span>,
-    <span class="code-string">"</span><span class="code-string">version"</span>: <span class="code-string">"</span><span class="code-string">0.0.0"</span>,
-    <span class="code-string">"</span><span class="code-string">description"</span>: <span class="code-string">"</span><span class="code-string">ExpressApp2"</span>,
+<pre lang="jscript" id="pre0" style="margin-top: 0px;">{
+    <span class="code-string">"</span><span class="code-string">name"</span>: <span class="code-string">"</span><span class="code-string">NodeWithExpress"</span>,
+    <span class="code-string">"</span><span class="code-string">version"</span>: <span class="code-string">"</span><span class="code-string">1.0.0"</span>,
+    <span class="code-string">"</span><span class="code-string">description"</span>: <span class="code-string">"</span><span class="code-string">NodeWithExpress"</span>,
     <span class="code-string">"</span><span class="code-string">main"</span>: <span class="code-string">"</span><span class="code-string">app.js"</span>,
     <span class="code-string">"</span><span class="code-string">author"</span>: {
-        <span class="code-string">"</span><span class="code-string">name"</span>: <span class="code-string">"</span><span class="code-string">tushar.gupta"</span>,
+        <span class="code-string">"</span><span class="code-string">name"</span>: <span class="code-string">"</span><span class="code-string">InfoBeans.India"</span>,
         <span class="code-string">"</span><span class="code-string">email"</span>: <span class="code-string">"</span><span class="code-string">"</span>
     },
     <span class="code-string">"</span><span class="code-string">dependencies"</span>: {
@@ -105,7 +105,7 @@ This is the configuration for the application. It specifies the dependencies(mod
 
 This file sets the initialisation parameters for the _node.js_ application.
 
-<div class="pre-action-link" id="premain1" style="width:100%;display:block;"><span id="precollapse1" style="cursor:pointer;margin:0;" onclick="processCodeBlocks.togglePre(1);">Collapse</span> ![](/images/arrow-up-16.png)  | [Copy Code](#)</div><pre lang="jscript" id="pre1" style="margin-top: 0px;"><span class="code-comment">/*</span><span class="code-comment">*
+<pre lang="jscript" id="pre1" style="margin-top: 0px;"><span class="code-comment">/*</span><span class="code-comment">*
  * Module dependencies.
  */</span>
 <span class="code-keyword">var</span> express = require(<span class="code-string">'</span><span class="code-string">express'</span>);
@@ -146,7 +146,7 @@ http.createServer(app).listen(app.get(<span class="code-string">'</span><span cl
 
 This file acts as a controller and responds to the request from client. It sets up the data for the view (from _services/database_) and sends the response.
 
-<div class="pre-action-link" id="premain2" style="width:100%;display:block;"><span id="precollapse2" style="cursor:pointer;margin:0;" onclick="processCodeBlocks.togglePre(2);">Collapse</span> ![](/images/arrow-up-16.png)  | [Copy Code](#)</div><pre lang="jscript" id="pre2" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Get Function
+tu<pre lang="jscript" id="pre2" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Get Function
 </span>   app.get(<span class="code-string">'</span><span class="code-string">/'</span>, <span class="code-keyword">function</span> (req, res) {
         <span class="code-comment">//</span><span class="code-comment"> check if the user's credentials are saved in a cookie //
 </span>        <span class="code-keyword">if</span> (req.cookies.user == undefined || req.cookies.pass == undefined) {
@@ -231,7 +231,7 @@ You can learn more about jade from online resources.
 
 Jade follows indentation styling to group elements.
 
-<div class="pre-action-link" id="premain3" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="text" id="pre3" style="margin-top: 0px;">extends walllayout
+<pre lang="text" id="pre3" style="margin-top: 0px;">extends walllayout
 
 block content
     include userdetails
@@ -276,23 +276,23 @@ include modals/form-errors</pre>
 
 #### Setting a master page in other jade pages
 
-<div class="pre-action-link" id="premain5" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="cs" id="pre5" style="margin-top: 0px;">extends walllayout</pre>
+<pre lang="cs" id="pre5" style="margin-top: 0px;">extends walllayout</pre>
 
 #### Setting containers in master page and using in child pages
 
-<div class="pre-action-link" id="premain6" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="cs" id="pre6" style="margin-top: 0px;">block content</pre>
+<pre lang="cs" id="pre6" style="margin-top: 0px;">block content</pre>
 
 #### Including a jade in other jade page
 
-<div class="pre-action-link" id="premain7" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="cs" id="pre7" style="margin-top: 0px;">include userdetails</pre>
+<pre lang="cs" id="pre7" style="margin-top: 0px;">include userdetails</pre>
 
 #### Below code shows how to insert script into jade pages
 
-<div class="pre-action-link" id="premain8" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="cs" id="pre8" style="margin-top: 0px;"> script(src=<span class="code-string">'</span><span class="code-string">http://www.codeproject.com/vendor/javascripts/scripts.js'</span>)</pre>
+<pre lang="cs" id="pre8" style="margin-top: 0px;"> script(src=<span class="code-string">'</span><span class="code-string">http://www.codeproject.com/vendor/javascripts/scripts.js'</span>)</pre>
 
 #### Below code shows how to set title and insert style into jade pages
 
-<div class="pre-action-link" id="premain9" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="cs" id="pre9" style="margin-top: 0px;">  head
+<pre lang="cs" id="pre9" style="margin-top: 0px;">  head
     title= title
     link(rel=<span class="code-string">'</span><span class="code-string">stylesheet'</span>, href=<span class="code-string">'</span><span class="code-string">http://www.codeproject.com/vendor/stylesheets/bootstrap_wall.min.css'</span>)</pre>
 
@@ -307,7 +307,7 @@ include modals/form-errors</pre>
 
 ### Setting up connection to mongodb database
 
-<div class="pre-action-link" id="premain10" style="width:100%;display:block;">[Copy Code](#)</div><pre lang="jscript" id="pre10" style="margin-top: 0px;"><span class="code-keyword">var</span> crypto = require(<span class="code-string">'</span><span class="code-string">crypto'</span>);
+<pre lang="jscript" id="pre10" style="margin-top: 0px;"><span class="code-keyword">var</span> crypto = require(<span class="code-string">'</span><span class="code-string">crypto'</span>);
 <span class="code-keyword">var</span> MongoDB = require(<span class="code-string">'</span><span class="code-string">mongodb'</span>).Db;
 <span class="code-keyword">var</span> Server = require(<span class="code-string">'</span><span class="code-string">mongodb'</span>).Server;
 <span class="code-keyword">var</span> moment = require(<span class="code-string">'</span><span class="code-string">moment'</span>);
@@ -333,7 +333,7 @@ db.open(<span class="code-keyword">function</span> (e, d) {
 
 ### Database queries
 
-<div class="pre-action-link" id="premain11" style="width:100%;display:block;"><span id="precollapse11" style="cursor:pointer;margin:0;" onclick="processCodeBlocks.togglePre(11);">Collapse</span> ![](/images/arrow-up-16.png)  | [Copy Code](#)</div><pre lang="jscript" id="pre11" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Insert
+<pre lang="jscript" id="pre11" style="margin-top: 0px;"><span class="code-comment">//</span><span class="code-comment">Insert
 </span>exports.addNewPost = <span class="code-keyword">function</span> (data, callback) {
     data.createdDate = moment().format(<span class="code-string">'</span><span class="code-string">MMMM Do YYYY, h:mm:ss a'</span>);
     posts.insert(data, <span class="code-keyword">function</span> (e, postAdded) {
